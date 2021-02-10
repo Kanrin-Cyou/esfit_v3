@@ -98,7 +98,7 @@ nav ul li {
 
 nav li h1{
   position:relative;
-  top:20%;
+  top:45%;
   color:#fff;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -117,7 +117,7 @@ nav li h1::before {
   height:3px;
   background-color: #fff;
   position: absolute;
-  top:20%;
+  top:45%;
   left:0;
   opacity:0;
 }
@@ -149,36 +149,6 @@ nav li:nth-of-type(5){
 nav li:nth-of-type(6){
     background:var(--navColor1)
   }
-
-/* Slide in animation with delay for each nav item */
-.slide-in-1 {
-animation:slide-in 0.4s linear 0.2s both;
-}
-
-.slide-in-2 {
-animation:slide-in 0.4s linear 0.4s both;
-}
-
-.slide-in-3 {
-animation:slide-in 0.4s linear 0.6s both;
-}
-
-.slide-in-4 {
-animation:slide-in 0.4s linear 0.8s both;
-}
-
-.slide-in-5 {
-animation:slide-in 0.4s linear 1.0s both;
-}
-  
-@keyframes slide-in {
-from {
-    transform: translateX(-100%);
-}
-to {
-    transform:translateX(0);
-}
-}
 
 @media screen and (min-width:1024px){
     .logoname-alternative{
