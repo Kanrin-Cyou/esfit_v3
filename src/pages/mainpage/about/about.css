@@ -1,0 +1,39 @@
+#about{
+    background: #FFDA7B;
+    background-size: cover;
+    padding-top:5rem;
+    padding-bottom:5rem;
+    width:100vw;
+    position: relative;
+    color: #000;
+    overflow-x: hidden;
+}
+
+.about-container{
+    display:flex;
+    align-items: center;
+}
+
+.about-img{
+    width:40vw;
+    padding-bottom:2rem;
+}
+
+.about-content{
+    padding-left:2rem;
+    padding-right:2rem;
+    text-align: left;
+}
+
+.about-content > h4 {
+    font-weight: normal;
+}
+
+@media screen and (max-width:800px){
+    .about-container{
+        flex-direction: column;
+    }
+    .about-img{
+        width:80vw;
+    }
+  }

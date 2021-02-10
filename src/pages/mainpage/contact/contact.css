@@ -1,0 +1,36 @@
+#contact{
+    background-color:#FFDA7B;
+    padding-top:5rem;
+    padding-bottom:5rem;
+    overflow-x: hidden;
+}
+
+.contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.contact-content-left{
+    padding-left:2rem;
+    padding-right:2rem;
+    padding-bottom:2rem;
+}
+
+.contact-content-right{
+    padding-bottom:2rem;
+}
+
+.googlemap{
+    width:45vw;
+}
+
+@media screen and (max-width:800px){
+    .contact-content{
+        flex-direction: column;
+    }
+    .googlemap{
+        width:80vw;
+    }
+  }

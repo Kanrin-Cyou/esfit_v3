@@ -1,0 +1,38 @@
+.portfolios{
+    background-color:#FFDA7B;
+    padding-top:4em;
+    padding-bottom:2em;
+}
+
+/* .cardlist{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    padding-bottom:20px;
+} */
+
+.cardlist{
+    display:flex;
+    padding:2em;
+    align-items: center;
+    overflow-y: scroll;
+    padding-bottom:20px;
+}
+
+.portfolios-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolios-title{
+    font-size:1.4em;
+    border-bottom: 5px solid #E8BC4C;
+}
+
+.portfolios-title h2{
+    padding-bottom:0.5em;
+    margin:0;
+}
