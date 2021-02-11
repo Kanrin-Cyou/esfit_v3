@@ -1,0 +1,16 @@
+#portfolioDetail{
+    height:85vh;
+    width:85vw;
+    background-color:#fff;
+    overflow-y:scroll;
+}
+
+.goback{
+    position:fixed;
+    top:5%;
+    left:40%;
+}
+
+.houseImg{
+    width:200px;
+}

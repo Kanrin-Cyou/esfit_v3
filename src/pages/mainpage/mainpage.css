@@ -5,3 +5,17 @@
     height:100vh;
     scroll-behavior: smooth;
 }
+
+#portfoliobox{
+    top:0;
+    left:0;
+    position:fixed;
+    z-index:10;
+    width:100vw;
+    height:100vh;
+    overflow-y:scroll;
+    background-color: rgba(0,0,0,0.85);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
