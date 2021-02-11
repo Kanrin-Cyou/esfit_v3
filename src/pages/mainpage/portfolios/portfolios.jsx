@@ -5,8 +5,8 @@ import React, {Component} from 'react';
 
 class Portfolios extends Component {
 
-    constructor(){
-      super();
+    constructor(props){
+      super(props);
       this.state = {
           
         }
@@ -15,7 +15,7 @@ class Portfolios extends Component {
     CardList = () => {
         const cardComponent = House.houses.map((house,i) =>{
             return (
-            <Houseitem key={i} {...house}/> 
+            <Houseitem key={i} {...house} routeChange={this.props.routeChange}/> 
             )
         })
 

@@ -12,7 +12,7 @@ class App extends Component {
     super();
     this.state = {
       route:"main",
-      portfolio:null
+      portfolio:1
       }
     }
 
@@ -22,21 +22,25 @@ class App extends Component {
     });
   }
 
+  routeChangeToPortfolio = (detail) => {
+    this.setState({route:"portfolio",portfolio:detail})
+  };
+
   render(){
     if (this.state.route === "portfolio"){
       return(
         <div className="App">
           <Nav/>
-          <PortfolioDetail/>
+          <PortfolioDetail detail = {this.state.portfolio}/>
           </div>
       )
-    } else 
+    } else {
     return (
         <div className="App">
           <Nav/>
-          <Mainpage/>
+          <Mainpage routeChange={this.routeChangeToPortfolio}/>
         </div>
-  );
+  );}
 }
 }
 

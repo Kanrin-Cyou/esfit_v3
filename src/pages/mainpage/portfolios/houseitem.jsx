@@ -2,11 +2,13 @@ import React from 'react';
 import './houseitem.css';
 
 const Houseitem = (props) =>{
-    const{name,address,traffic,rental,area,style,img,id}= props;
+    const{name,address,traffic,rental,area,style,img,id} = props;
+
+    const AssignProps = () => props
 
         return(
 
-            <div className="card" data-aos="fade-left" data-aos-delay="100">
+            <div className="card" data-aos="fade-left" data-aos-delay="100" onClick={()=>props.routeChange(AssignProps)}>
                 <div className="card-image" id='card-image'>
                     <img className='card-images'src={img} alt={`house${id}`} />
                 </div>

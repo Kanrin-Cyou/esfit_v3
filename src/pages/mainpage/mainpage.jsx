@@ -9,8 +9,8 @@ import Contact from './contact/contact';
 
 class Mainpage extends Component {
 
-    constructor(){
-      super();
+    constructor(props){
+      super(props);
       this.state = {
         }
       }
@@ -21,7 +21,7 @@ class Mainpage extends Component {
             <Hero/>
             <About/>
             <Feature/>
-            <Portfolios/>
+            <Portfolios routeChange={this.props.routeChange}/>
             <Info/>
             <Contact/>
         </div>
