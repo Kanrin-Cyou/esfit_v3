@@ -4,15 +4,6 @@
     padding-bottom:2em;
 }
 
-/* .cardlist{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    overflow-x: scroll;
-    padding-bottom:20px;
-} */
-
 .cardlist{
     display:flex;
     padding:2em;

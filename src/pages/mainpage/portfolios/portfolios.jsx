@@ -15,13 +15,7 @@ class Portfolios extends Component {
     CardList = () => {
         const cardComponent = House.houses.map((house,i) =>{
             return (
-            <Houseitem
-            key={i}
-            id={House.houses.[i].id}
-            name={House.houses.[i].name} 
-            address={House.houses.[i].address}
-            traffic={House.houses.[i].traffic}
-            img={House.houses.[i].img}/> 
+            <Houseitem key={i} {...house}/> 
             )
         })
 
