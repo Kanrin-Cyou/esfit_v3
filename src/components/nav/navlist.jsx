@@ -9,9 +9,9 @@ class Navlist extends Component {
       }
 
     render(){
-        if(this.props.navstate){
+        if(this.props.display === null){
             return(
-                <div className="menu-bars change" id="menu-bars" onClick={()=>this.props.handleClick()}>
+                <div className="menu-bars change" id="menu-bars" onClick={()=>this.props.handleClick(true)}>
                     <div className="bar1"></div>
                     <div className="bar2"></div>
                     <div className="bar3"></div>
@@ -19,7 +19,7 @@ class Navlist extends Component {
             )
         } else {
             return(
-                <div className="menu-bars" id="menu-bars" onClick={()=>this.props.handleClick()}>
+                <div className="menu-bars" id="menu-bars" onClick={()=>this.props.handleClick(false)}>
                     <div className="bar1"></div>
                     <div className="bar2"></div>
                     <div className="bar3"></div>

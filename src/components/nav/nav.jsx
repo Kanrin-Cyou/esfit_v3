@@ -8,48 +8,64 @@ class Nav extends Component {
     constructor(){
       super();
       this.state = {
-          navstate:false
+          display:"none",
+          isOpen:false
         }
       }
 
-    handleClick = () => {
-        this.setState({navstate:!this.state.navstate})
+    handleClick = (command) => {
+        if(command){
+            this.setState({display:"none",isOpen:!this.state.isOpen})
+        } else {
+            this.setState({display:null,isOpen:!this.state.isOpen})  
+        }
     };
 
-    render(){
-        if(this.state.navstate){
-            return(
-                <div className="nav-list-fold" id="nav-list-fold">
-                    <div className="menu" id="menu">
-                        <div className="logo">
-                            <div className="logoimg"><img src={Logo} alt="img"/></div>
-                            <div className="logoname">エス・フィット株式会社</div>
-                            <div className="logoname-alternative">ESFIT</div>
-                        </div>
-                        <div className="nav-list-mini">
-                            <Navlist handleClick={this.handleClick} navstate={this.state.navstate}/>
-                        </div>
-                    </div>
-                    
-                    <nav className="overlay" id="overlay">
-                        <ul>
-                            <li id="nav-1" ><Link to="hero" smooth={true} duration={1000} onClick={()=>this.handleClick()}><h1>トップ</h1></Link></li>
-                            <li id="nav-2" ><Link to="about" smooth={true} duration={1000} onClick={()=>this.handleClick()}><h1>御挨拶</h1></Link></li>
-                            <li id="nav-3" ><Link to="features" smooth={true} duration={1000} onClick={()=>this.handleClick()}><h1>特徴</h1></Link></li>
-                            <li id="nav-4" ><Link to="portfolios" smooth={true} duration={1000} onClick={()=>this.handleClick()}><h1>物件紹介</h1></Link></li>
-                            <li id="nav-5" ><Link to="info" smooth={true} duration={1000} onClick={()=>this.handleClick()}><h1>会社概要</h1></Link></li>
-                            <li id="nav-6" ><Link to="contact" smooth={true} duration={1000} onClick={()=>this.handleClick()}><h1>連絡先</h1></Link></li>
-                        </ul>
-                    </nav> 
-                </div>
-        );
+    changeSlide = (i) => {
+        if(this.state.display === "none" && !this.state.isOpen) {
+            return("slide-out-"+i)
+        } else if(this.state.display === null && this.state.isOpen) {
+            return("slide-in-"+i)
         } else {
+            return(null)
+        }
+    }
+
+    changeOverlay = () => {
+        if(this.state.display === "none" && !this.state.isOpen) {
+            return("overlay overlay-slide-left")
+        } else if(this.state.display === null && this.state.isOpen) {
+            return("overlay overlay-slide-right")
+        } else {
+            return("overlay")
+        }
+    }
+
+    showNav = () => {
+          return(
+                <nav>
+                    <ul>
+                        <li className={this.changeSlide(1)} id="nav-1" ><Link to="hero" smooth={true} duration={1000} onClick={()=>this.handleClick(true)}>トップ</Link></li>
+                        <li className={this.changeSlide(2)} id="nav-2" ><Link to="about" smooth={true} duration={1000} onClick={()=>this.handleClick(true)}>御挨拶</Link></li>
+                        <li className={this.changeSlide(3)} id="nav-3" ><Link to="features" smooth={true} duration={1000} onClick={()=>this.handleClick(true)}>特徴</Link></li>
+                        <li className={this.changeSlide(4)} id="nav-4" ><Link to="portfolios" smooth={true} duration={1000} onClick={()=>this.handleClick(true)}>物件紹介</Link></li>
+                        <li className={this.changeSlide(5)} id="nav-5" ><Link to="info" smooth={true} duration={1000} onClick={()=>this.handleClick(true)}>会社概要</Link></li>
+                        <li className={this.changeSlide(6)} id="nav-6" ><Link to="contact" smooth={true} duration={1000} onClick={()=>this.handleClick(true)}>連絡先</Link></li>
+                    </ul>
+                </nav>
+            )
+      }
+
+    render(){
             return(
                 <div className="menu" id="menu">
                     <div className="logo">
                         <div className="logoimg"><img src={Logo} alt="img"/></div>
                         <div className="logoname">エス・フィット株式会社</div>
-                        <div className="logoname-alternative">ESFIT</div>
+                        <div className="logoname-alternative">エス・フィット株式会社</div>
+                    </div>
+                    <div className={this.changeOverlay()} id="overlay">
+                        {this.showNav()}
                     </div>
                     <div className="nav-list" id="nav-list">
                         <ul>
@@ -62,12 +78,13 @@ class Nav extends Component {
                         </ul>
                     </div>
                     <div className="nav-list-mini">
-                        <Navlist handleClick={this.handleClick} navstate={this.state.navstate}/>
+                        <Navlist handleClick={this.handleClick} display={this.state.display}/>
                     </div>
                 </div>
             )
         };
     } 
-}
 
 export default Nav;
+
+// style={{display:this.state.display}}
