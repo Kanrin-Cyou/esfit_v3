@@ -1,6 +1,7 @@
 import './portfolioDetail.css';
 import React, {Component} from 'react';
 import AwesomeSlider from 'react-awesome-slider';
+import Slideicon from './slideicon.png';
 import 'react-awesome-slider/dist/styles.css';
 
 class PortfolioDetail extends Component {
