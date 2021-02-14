@@ -1,14 +1,15 @@
 #portfolioDetail{
     height:85vh;
     width:85vw;
-    background-color:#fff;
-    overflow-y:scroll;
+    background-color:#fffef2;
+    border-radius: 0.5rem;
+    overflow-y:hidden;
 }
 
 .close {
     position: fixed;
-    top:5%;
-    left:40%;
+    top:2%;
+    left:90%;
     width: 32px;
     height: 32px;
     opacity: 0.7;
@@ -22,7 +23,7 @@ left: 15px;
 content: ' ';
 height: 33px;
 width: 2px;
-background-color: #fff;
+background-color: #fffef2;
 }
 .close:before {
 transform: rotate(45deg);
@@ -31,22 +32,151 @@ transform: rotate(45deg);
 transform: rotate(-45deg);
 }
 
-.portfoiliocontent{
+.housetitle{
+    padding-top:2%;
+    height:8%;
     display:flex;
-    justify-content: center;
     align-items: center;
 }
 
-.housetitle h2{
-    display:inline;
-    padding:1rem;
+.pf-button{
+    margin-left:2rem;
+    margin-right:1rem;
+    width:8rem;
+    background-color:#FFDA7B;
+    border: 0px;
+    border-radius: 0.5rem;
+    font-size:1.2rem;
+    font-weight: bold;
+    text-align:center;
 }
 
-.picSlider{
-    padding:2rem;
-    width:400px;
+.pf-button p{
+    margin:0.5rem;
+}
+
+.portfoiliocontent{
+    height:90%;
+    display:flex;
+}
+
+.carousel{
+    height:85%;
+    width:40%;
+    padding-top:2rem;
+    padding-left:2rem;
+}
+
+.awssld{
+    height:100%
+}
+
+.detailimg{
+    height:100%;
+    width:100%;
+}
+
+.detailimg img {
+    max-width: 100%;
+    height: auto;
+}
+
+.housedetail{
+    width:50%;
+    padding-top:2rem;
+    padding-left:1rem;
+    padding-right:2rem;
 }
 
 .housedetail ul{
-    list-style-type: none
+    border:solid 1px #D4CAA3;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction: column;
 }
+
+
+.housedetail ul ul{
+    margin:0;
+    padding:0;
+    text-align:left;
+    display:flex;
+    flex-direction: row;
+}
+
+.housedetail ul ul li {
+    font-size:1.2rem;
+    text-align:left;
+    overflow: auto;
+}
+
+.listtitle{
+    width:30%;
+    min-width:100px;
+    border-right:solid 1px #D4CAA3;
+    background-color: #f6e8b1;
+} 
+
+.houselist p{
+    margin:0.3rem;
+}
+
+@media screen and (max-width:1184px){
+    #portfolioDetail{
+        overflow-y: scroll;
+        flex-direction: column;
+        
+    }
+
+    .portfoiliocontent{
+        flex-direction: column;
+    }
+
+    .housetitle{
+        height:8%;
+        padding-top:1rem;
+        padding-left:1rem;
+        padding-right:1rem;
+    }
+
+    .pf-button{
+        margin-left:0;
+        margin: right 0;
+        width:8rem;
+        background-color:#FFDA7B;
+        border: 0px;
+        border-radius: 0.5rem;
+        font-size:1.2rem;
+        font-weight: bold;
+        text-align:center;
+    }
+
+    .carousel{
+        height:auto;
+        width:90%;
+        padding-top:1rem;
+        padding-left:1rem;
+        padding-right:1rem;
+    }
+
+    .detailimg{
+        display:flex;
+        justify-content: center;
+    }
+
+    .detailimg img {
+        max-height: 100%;
+        width: auto;
+    }
+
+    .housedetail{
+        width:90%;
+        padding-top:2rem;
+        padding-left:1rem;
+        padding-right:1rem;
+        padding-bottom:1rem;
+    }
+  }
+

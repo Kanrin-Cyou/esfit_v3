@@ -8,16 +8,15 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "aos": "^2.3.4",
-    "bootstrap": "^5.0.0-beta1",
     "gh-pages": "^3.1.0",
     "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-awesome-slider": "^4.1.0",
-    "react-bootstrap": "^1.4.3",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
     "react-scroll": "^1.8.1",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "yocto-queue": "^0.1.0"
   },
   "scripts": {
     "predeploy": "npm run build",
