@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/esfit_v3/static/css/main.bd0dba44.chunk.css",
+    "main.css": "/esfit_v3/static/css/main.24a9e08b.chunk.css",
     "main.js": "/esfit_v3/static/js/main.d6cd690b.chunk.js",
     "main.js.map": "/esfit_v3/static/js/main.d6cd690b.chunk.js.map",
     "runtime-main.js": "/esfit_v3/static/js/runtime-main.116169c1.js",
@@ -12,7 +12,7 @@
     "static/js/3.044e1538.chunk.js.map": "/esfit_v3/static/js/3.044e1538.chunk.js.map",
     "index.html": "/esfit_v3/index.html",
     "static/css/2.f933677d.chunk.css.map": "/esfit_v3/static/css/2.f933677d.chunk.css.map",
-    "static/css/main.bd0dba44.chunk.css.map": "/esfit_v3/static/css/main.bd0dba44.chunk.css.map",
+    "static/css/main.24a9e08b.chunk.css.map": "/esfit_v3/static/css/main.24a9e08b.chunk.css.map",
     "static/js/2.b2eb8dde.chunk.js.LICENSE.txt": "/esfit_v3/static/js/2.b2eb8dde.chunk.js.LICENSE.txt",
     "static/media/02.bef9d01a.svg": "/esfit_v3/static/media/02.bef9d01a.svg",
     "static/media/04.05acadc6.png": "/esfit_v3/static/media/04.05acadc6.png",
@@ -57,7 +57,7 @@
     "static/js/runtime-main.116169c1.js",
     "static/css/2.f933677d.chunk.css",
     "static/js/2.b2eb8dde.chunk.js",
-    "static/css/main.bd0dba44.chunk.css",
+    "static/css/main.24a9e08b.chunk.css",
     "static/js/main.d6cd690b.chunk.js"
   ]
 }
