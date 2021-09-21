@@ -40,6 +40,12 @@ class Timeline extends Component {
                     <h2>賃貸仲介事業の展開</h2>
                     <p></p>
                     </div>);
+            case 5:
+                return(<div>
+                    <h2>免許番号の更新</h2>
+                    <h2>買収業務の展開</h2>
+                    <p></p>
+                    </div>);
             default:
                 return(<div>                
                             <h2>株式会社橘設立</h2>
@@ -54,7 +60,7 @@ class Timeline extends Component {
 
     
     widthChange() {
-        let widthLength = (this.state.activeIndex/4)*100
+        let widthLength = (this.state.activeIndex/5)*100
         return {
             width:widthLength+"%"
         }
@@ -72,6 +78,7 @@ class Timeline extends Component {
                         <li className={this.state.activeIndex>1 ? 'step active' : 'step'} onClick={()=>this.handleClick(2)}><div className="step-inner">平成 28 年</div></li>
                         <li className={this.state.activeIndex>2 ? 'step active' : 'step'} onClick={()=>this.handleClick(3)}><div className="step-inner">平成 29 年</div></li>
                         <li className={this.state.activeIndex>3 ? 'step active' : 'step'} onClick={()=>this.handleClick(4)}><div className="step-inner">平成 30 年</div></li>
+                        <li className={this.state.activeIndex>4 ? 'step active' : 'step'} onClick={()=>this.handleClick(5)}><div className="step-inner">令和 3 年</div></li>
                     </ul>
                     
                     <div id="line">
