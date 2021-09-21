@@ -18,7 +18,7 @@ const Info = () => {
             <div className="info-content">
                 <div className="info-left">
                     <p className=''>■免許番号</p>
-                    <p className=''>東京都知事（1）第 99100 号</p>
+                    <p className=''>東京都知事（2）第 99100 号</p>
                     <p className=''>■所属団体</p>
                     <p className=''>東京法務局<br/> 東京都不動産流通機構会員<br/> （社）不動産保証協会<br/> （社）不動産保証協会 東京都本部<br/> </p>
                 </div>
